@@ -13,6 +13,7 @@
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.14.0",
     "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^7.0.2",
     "nexios": "^2.0.3",
     "next": "15.3.1",

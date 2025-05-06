@@ -9,6 +9,8 @@ export type Row = RawRow & {
 	'Last Name'?: string;
 	DMA?: string;
 	DMA_CODE?: string;
+	lat: number;
+	lon: number;
 };
 
 export type DMARow = {

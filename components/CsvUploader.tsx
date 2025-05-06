@@ -5,7 +5,7 @@ import parseCsv from '@/utils/parseCsv';
 import { api } from '@/utils/api';
 import { DMARow, Row } from '@/types';
 import nexios from 'nexios';
-import { TextField } from '@mui/material';
+import { Input } from '@mui/joy';
 
 const CsvUploader = () => {
 	const [csvFile, setCsvFile] = useState<File | null>(null);
@@ -33,7 +33,7 @@ const CsvUploader = () => {
 	};
 
 	return (
-		<div className="mt-4 border p-4 rounded bg-gray-800">
+		<div className="mt-4 border p-4 rounded bg-gray-700 flex flex-col space-y-2">
 			<label className="block mb-2 font-medium text-white">Upload CSV File</label>
 			<label
 				htmlFor="csv-upload"
@@ -50,8 +50,8 @@ const CsvUploader = () => {
 			/>
 
 			{csvFile && (
-				<div>
-					<TextField />
+				<div className="">
+					<Input />
 					<button
 						onClick={handleParse}
 						className="mt-4 w-full px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
